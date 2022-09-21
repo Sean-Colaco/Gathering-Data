@@ -1,0 +1,18 @@
+.listItem{
+    border:2px solid #F7F7F7;
+    padding:10px;
+    border-radius:20px;
+    margin-bottom: 20px;
+    margin:10px 10px 20px 10px;
+    color: #F7F7F7;
+    font-size: 18px;
+
+    opacity: 0;
+    transition: all .5s;
+    
+    
+}
+
+/* .listItem:last-child{
+    margin-bottom: 0px;
+} */

@@ -1,0 +1,182 @@
+
+.cardContainer{
+    z-index: 20000;
+    position: relative;
+    margin-top: 100px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .cardContainer{
+        margin-top: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .cardContainer{
+       margin-top: 10px;
+    }
+  }
+
+.cardContainer:hover .UserList{
+    transform: translate(51%, -90%);
+    transition: all .5s;
+}
+@media only screen and (max-width: 800px) {
+    .cardContainer:hover .UserList{
+        transform: translate(-50%, 5%);
+    }
+  }
+
+.cardContainer:hover .card{
+    transform: translate(-51%, 10%);
+    transition: all .5s;
+}
+
+@media only screen and (max-width: 800px) {
+    .cardContainer:hover .card{
+      transform: translate(0 , 0);
+    }
+  }
+
+
+
+.cardContainer:hover .UserList > * {
+    opacity: 1;
+}
+
+.card{
+    
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+    z-index: 10;
+    transform: translateX(-10%);
+    transition: all .5s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 1300px) {
+    .card{
+      padding:10px;
+    }
+  }
+
+
+@media only screen and (max-width: 800px) {
+    .card{
+      padding:10px;
+      transform: translate(0, 0%);
+      height: 70vh;
+      overflow-y: auto;
+    }
+  }
+
+/* .container{
+    z-index: 100;
+} */
+
+
+.form{
+    display:grid;
+    grid-gap:20px;
+    grid-template-columns: 1fr 1fr;
+
+}
+@media only screen and (max-width: 1300px) {
+    .form{
+        grid-template-columns: 1fr;
+        grid-gap:10px;
+    }
+  }
+
+ 
+
+.button{
+    cursor: pointer;
+    background-color: #566696;
+    color:white;
+    border: none;
+    height: 40px;
+    grid-column: 1/3;
+}
+
+@media only screen and (max-width: 1300px) {
+    .button{
+        grid-column: 1/2;
+    }
+  }
+
+.label{
+    display: block;
+    padding-bottom: 10px;
+}
+
+input{
+    display: block;
+    background-color: #EDF2F5;
+    border: none;
+    height: 30px;
+    width:100%;
+}
+
+h1{
+    text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+    h1{
+        margin:2px;
+    }
+  }
+
+
+
+.UserList{
+    position: absolute;
+    background-color: #4D6381;
+    list-style-type: none;
+    border-radius: 20px;
+    overflow-y: auto;
+    width:100%;
+    height:100%;
+    padding:0;
+    transform: translate(10%, -80%) ;
+    z-index: -1;
+    margin:0;
+    transition: all .5s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 12px 40px 0 rgba(0, 0, 0, 0.5);
+    
+}
+
+@media only screen and (max-width: 1300px) {
+    .UserList{
+        transform: translate(10%,-90%);
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .UserList{
+      left:50%;
+      height: 30%;
+      width:70vw;
+      margin:0 auto;
+      transform: translate(-50%, 5%);
+    }
+  }
+
+.placeHolderText{
+    opacity: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10%;
+    color: #F7F7F7;
+    border-bottom: 2px solid #F7F7F7;
+    transition: all .5s;
+}
+
+
+
+/* .UserList.active{
+    padding: 30px 30px;
+} */
+

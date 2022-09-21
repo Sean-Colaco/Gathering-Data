@@ -1,0 +1,16 @@
+.UserList{
+    position: absolute;
+    left:1200px;
+    background-color: black;
+    color: #20C20E;
+    list-style-type: none;
+    border-radius: 20px;
+    overflow-y: auto;
+    z-index: 20;
+    width:400px;
+    height:700px;
+}
+
+.UserList.active{
+    padding: 30px 30px;
+}
