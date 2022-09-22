@@ -10,7 +10,7 @@ Created with React - JS by Sean Colaco
 1) After the user hovers their mouse over the form it'll split into two squares where the user can clearly view both the input form and where the data is submitted.
 
 ## Input View
-<img src='/readMeImages/Q%26AInput.png'>
+<img src='/readMeImages/Q%26AInput2.png'>
 
 2) Once the user is satisfied with the information they've entered they can then press the blue button to submit the form.
 
